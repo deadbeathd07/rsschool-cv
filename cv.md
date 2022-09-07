@@ -2,7 +2,7 @@
 
 ## Contacts
 
-- e-mail - deadbeat.hd.07@gmail.com
+- E-mail - deadbeat.hd.07@gmail.com
 - Telegram - [@anastasiya_lebedevich](https://t.me/anastasiya_lebedevich)
 - Discord - Nastya Lebedevich(@deadbeathd07)
 
@@ -16,7 +16,7 @@ The main goal is to get a job as a frontend developer, speak English fluently. S
 
 I am a very patient person in relation to other people, I quickly find a common language with people, especially if they are also interested in communication. When my efforts are noticed and praised, I begin to work even harder.
 
-### Weak Traits
+### Weak character traits
 
 I tend to downplay my achievements and devalue my own work. Also, I am not always punctual in routine duties.
 
@@ -27,25 +27,17 @@ I don't have experience as a frontend developer, but I'm looking to improve my d
 ### Skills
 
 - HTML / CSS (SCSS/SASS)
-
 - BEM
-
 - JavaScript
 - React.js
 - Node.js
-
 - MySQL
-
 - Webflow
-
 - Git
-
 - Webpack
 - Gulp
-
 - NPM
 - Devtools
-
 - Adobe Photoshop
 - Adobe Illustrator
 - Figma
