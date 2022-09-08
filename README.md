@@ -1,1 +1,1 @@
-https://deadbeathd07.github.io/rs-school-cv/cv
+https://deadbeathd07.github.io/rsschool-cv/cv
