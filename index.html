@@ -29,6 +29,9 @@
                 <li class="nav__item">
                   <a class="nav__link" href="#">Education</a>
                 </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">English</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -37,27 +40,141 @@
       <main class="main">
         <div class="container">
           <div class="main__inner">
-            <div class="img-wrapper">
-              <img src="./personal-photo.jpg" alt="personal photo" />
-            </div>
-            <h1 class="title__first-order">Anastasiya Lebedevich</h1>
-            <h2 class="title__second-order">Junior Frontend React Developer</h2>
-            <div class="contacts">
-              <ul class="contacts__list">
-                <li class="contacts__item">
-                  E-mail - deadbeat.hd.07@gmail.com
-                </li>
-                <li class="contacts__item">
-                  Telegram -
-                  <a href="https://t.me/anastasiya_lebedevich">
-                    @anastasiya_lebedevich
-                  </a>
-                </li>
-                <li class="contacts__item">
-                  Discord - Nastya Lebedevich(@deadbeathd07)
-                </li>
-              </ul>
-            </div>
+            <section class="personal-card">
+              <div class="img-wrapper">
+                <img src="./personal-photo.jpg" alt="personal photo" />
+              </div>
+              <div class="contacts-card">
+                <h1 class="title__first-order">Anastasiya Lebedevich</h1>
+                <h2 class="title__second-order">
+                  Junior Frontend React Developer
+                </h2>
+                <div class="contacts">
+                  <ul class="contacts__list">
+                    <li class="contacts__item">
+                      E-mail - deadbeat.hd.07@gmail.com
+                    </li>
+                    <li class="contacts__item">
+                      Telegram -
+                      <a href="https://t.me/anastasiya_lebedevich">
+                        @anastasiya_lebedevich
+                      </a>
+                    </li>
+                    <li class="contacts__item">
+                      Discord - Nastya Lebedevich(@deadbeathd07)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section class="description">
+              <div class="card">
+                <h3 class="card__title">Personal information</h3>
+                <div class="card__content">
+                  <ul class="card__list">
+                    <li class="card__item">
+                      <h4 class="card__content-title">Target</h4>
+                      <p class="card__description">
+                        The main goal is to get a job as a frontend developer,
+                        speak English fluently. Short term goal is to complete
+                        two small projects I'm working on at the moment. The
+                        accompanying goal at this stage is to complete courses
+                        at rs-school.
+                      </p>
+                    </li>
+                    <li class="card__item">
+                      <h4 class="card__content-title">
+                        Strong character traits
+                      </h4>
+                      <p class="card__description">
+                        I am a very patient person in relation to other people,
+                        I quickly find a common language with people, especially
+                        if they are also interested in communication. When my
+                        efforts are noticed and praised, I begin to work even
+                        harder.
+                      </p>
+                    </li>
+                    <li class="card__item">
+                      <h4 class="card__content-title">Weak character traits</h4>
+                      <p class="card__description">
+                        I tend to downplay my achievements and devalue my own
+                        work. Also, I am not always punctual in routine duties.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card">
+                <h3 class="card__title">Work experience</h3>
+                <div class="card__content">
+                  <p class="card__description">
+                    I don't have experience as a frontend developer, but I'm
+                    looking to improve my development skills. I study every day,
+                    I do small projects on my own. Even when sometimes it seems
+                    to me that my efforts are not enough or I do not see the
+                    expected result, I do not allow negative thoughts to capture
+                    me and continue my activities.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <h3 class="card__title">Skills</h3>
+                <div class="card__content">
+                  <ul class="card__list">
+                    <li class="card__item">HTML / CSS (SCSS/SASS)</li>
+                    <li class="card__item">BEM</li>
+                    <li class="card__item">JavaScript</li>
+                    <li class="card__item">React.js</li>
+                    <li class="card__item">Node.js</li>
+                    <li class="card__item">MySQL</li>
+                    <li class="card__item">Webflow</li>
+                    <li class="card__item">Git</li>
+                    <li class="card__item">Webpack</li>
+                    <li class="card__item">Gulp</li>
+                    <li class="card__item">NPM</li>
+                    <li class="card__item">Devtools</li>
+                    <li class="card__item">Adobe Photoshop</li>
+                    <li class="card__item">Adobe Illustrator</li>
+                    <li class="card__item">Figma</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card">
+                <h3 class="card__title">Code examples</h3>
+                <div class="card__content">
+                  <h4 class="card__content-title">Description</h4>
+                  <p class="card__description">
+                    Complete the method/function so that it converts
+                    dash/underscore delimited words into camel casing. The first
+                    word within the output should be capitalized only if the
+                    original word was capitalized (known as Upper Camel Case,
+                    also often referred to as Pascal case).
+                  </p>
+                  <pre>
+                    <code>
+                      function toCamelCase(str) {
+                        if (str.length === 0) {
+                          return "";
+                        } else {
+                          let separator;
+                          if (str.indexOf("-") !== -1) {
+                            separator = "-";
+                          } else if (str.indexOf("_") !== -1) {
+                            separator = "_";
+                          }
+                          return str
+                            .split(separator)
+                            .map((substr, index) => {
+                              return index === 0 ? substr : substr[0].toUpperCase() + substr.slice(1);
+                            })
+                            .join("");
+                        }
+                      }
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </main>
