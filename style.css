@@ -1,3 +1,303 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-width: 350px;
+  font-family: "Montserrat", sans-serif;
+  background-color: whitesmoke;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.main__inner {
+  padding: 2rem 0;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav {
+  position: fixed;
+  padding: 1rem 0;
+  left: 0;
+  right: 0;
+  background: rgba(246, 224, 180, 0.2);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav__item {
+  margin: 0 0.5rem;
+}
+
+.nav__link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #a49cbc;
+  transition: all 0.2s;
+}
+
+@media (max-width: 900px) {
+  .nav__link {
+    font-size: 0.8rem;
+  }
+}
+
+.nav__link:hover {
+  color: whitesmoke;
+}
+
+.nav__link:active {
+  color: #dbd4f1;
+}
+.personal-card {
+  position: relative;
+}
+.personal-card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 10vh);
+  top: -105px;
+  background-image: url("./background.jpg");
+  background-position: center;
+  z-index: -100;
+}
+
+.personal-card__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem 0;
+  color: whitesmoke;
+}
+
+.img-wrapper {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 100%;
+  border: 6px solid whitesmoke;
+  background-image: url("./personal-photo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 700px) {
+  .img-wrapper {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+@media (max-width: 490px) {
+  .personal-card__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-wrapper {
+    width: 70vw;
+    height: 70vw;
+  }
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.title_first-order {
+  font-size: 2rem;
+}
+
+.title_second-order {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+@media (max-width: 700px) {
+  .title_first-order {
+    font-size: 1.5rem;
+  }
+  .title_second-order {
+    font-size: 1rem;
+  }
+}
+
+.contacts {
+  margin: 1.5rem 0;
+}
+.contacts-card {
+  max-width: 50%;
+}
+
+.contacts__link,
+.card__link {
+  cursor: pointer;
+  color: #a49cbc;
+  transition: all 0.3s;
+}
+
+.contacts__link:hover {
+  color: whitesmoke;
+}
+
+.description__inner {
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 2rem));
+  grid-gap: 2rem;
+  padding: 2rem 0;
+}
+
+@media (max-width: 800px) {
+  .description__inner {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    padding: 0;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #d8edf7;
+  border-radius: 0.4rem;
+  padding: 1.5rem;
+  color: #7d90a7;
+}
+.card__title,
+.card__content-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.card__title {
+  color: #d60188;
+}
+
+.card__content-title {
+  color: #b0bcd9;
+  margin-top: 0.5rem;
+}
+
+.card__item {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .card__code {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .card__code {
+    font-size: 0.6rem;
+  }
+}
+
+.card__link:hover {
+  color: #d60188;
+}
+
+.footer {
+  background-color: #f6e0b4;
+}
+
+.footer__inner {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link {
+  color: inherit;
+  transition: all 0.3s;
+}
+.footer__link:hover {
+  color: #d60188;
+}
+
+.footer__img {
+  width: 100px;
+  height: auto;
 }
